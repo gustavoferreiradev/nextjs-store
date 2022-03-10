@@ -10,7 +10,7 @@ function Navbar(): JSX.Element {
           <Link href="/">Home</Link>
         </li>
         <li className="navlink">
-          <Link href="/loja">Loja</Link>
+          <Link href="/shop">Loja</Link>
         </li>
         <li className="navlink">
           <Link href="/cart">Carrinho</Link>

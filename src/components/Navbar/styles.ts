@@ -21,4 +21,13 @@ export const Nav = styled.nav`
     margin: 0 0.75rem;
     text-transform: uppercase;
   }
+
+  li.navlink a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  li.navlink a:hover {
+    color: #f9826c;
+  }
 `

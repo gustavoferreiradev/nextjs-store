@@ -7,9 +7,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="wrapper">
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   )
 }

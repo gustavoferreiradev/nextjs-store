@@ -2,7 +2,7 @@ import Image, { ImageProps } from 'next/image'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/cart.slice'
 import { AppDispatch } from '../../redux/store'
-import { Card, Title } from './styles'
+import { Card, Title } from '../../styles/components/ProductCard'
 import { Product } from '../../types/Product'
 
 interface ProductProps {

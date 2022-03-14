@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { Container } from './styles'
+import { Container } from '../../styles/pages/Cart'
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux'
 import Image from 'next/image'
 import {

@@ -1,4 +1,4 @@
-import { FooterBar } from './styles'
+import { FooterBar } from '../../styles/components/Footer'
 
 function Footer(): JSX.Element {
   return (

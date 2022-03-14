@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import ProductCard from '../../components/ProductCard'
-import { Container } from '../../pages/shop/styles'
+import { Container } from '../../styles/pages/Shop'
 import getProductsByCategory from '../../services/Products/getProductsByCategory'
 import { Product } from '../../types/Product'
 

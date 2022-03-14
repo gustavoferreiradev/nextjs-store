@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import { useEffect, useState } from 'react'
-import { Container } from './styles'
+import { Container } from '../../styles/pages/Shop'
 import getAllProducts from '../../services/Products/getAllProducts'
 import ProductCard from '../../components/ProductCard'
 import { v4 as uuid } from 'uuid'

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { RootStateOrAny, useSelector } from 'react-redux'
-import { Nav } from './styles'
+import { Nav } from '../../styles/components/Navbar'
 
 interface Product {
   quantity: string

@@ -4,6 +4,7 @@ import CategoryCard from '../components/CategoryCard'
 import { Container, Large, Small } from './styles'
 import getAllCategories from '../services/Categories/getAllCategories'
 import images from '../utils/images'
+import { v4 as uuid } from 'uuid'
 
 const Home: NextPage = (): JSX.Element => {
   const [categories, setCategories] = useState<string[]>([])
@@ -20,8 +21,8 @@ const Home: NextPage = (): JSX.Element => {
     <Container>
       <Large>
         {categories && categories.length > 0
-          ? categories.map((item, index) => (
-              <CategoryCard key={item.id} image={images[index]} name={item} />
+          ? categories.map((item, index: number) => (
+              <CategoryCard image={images[index]} name={item} key={uuid()} />
             ))
           : ''}
       </Large>

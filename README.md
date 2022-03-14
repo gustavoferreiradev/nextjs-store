@@ -20,14 +20,11 @@
 
 ## ⚙️ Funcionalidades
 
-- [x] Registrar ponto de entrada, saída, horário de almoço. 
-- [x] Relatórios Gerenciais
-    - [x] Registro de quantidade de funcionários.
-    - [x] Registro de faltas do dia. 
-    - [x] Registro de Horas Trabalhadas no mês. 
-- [x] Relatórios Mensais
-    - [x] Filtro por Mês/Ano e Funcionários. 
-- [x] Cadastro e alteração de funcionários.
+- [x] Listar Produtos 
+- [x] Listar Categorias
+- [x] Adicionar / Remover Produtos ao Carrinho de Compras
+- [x] Adicionar / Remover as quantidades dos Produtos no Carrinho de Compras
+ 
 ---
 
 ## 🚀 Como executar o projeto
@@ -52,13 +49,11 @@ $ cd nextjs-store
 # A aplicação será aberta na porta:3000 - acesse http://localhost
 
 ```
-
 ---
 
 #### 🧭 Rodando os testes unitários
 
 ```bash
-
 
 # Após entrar no diretório, execute o comando abaixo:
 $ yarn test

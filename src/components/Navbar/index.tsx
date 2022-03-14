@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { useSelector } from 'react-redux'
-import { RootState } from '../../redux/store'
+import { RootStateOrAny, useSelector } from 'react-redux'
 import { Nav } from './styles'
 
 interface Product {
@@ -8,7 +7,7 @@ interface Product {
 }
 
 function Navbar(): JSX.Element {
-  const cart = useSelector((state: RootState) => state.cart)
+  const cart = useSelector((state: RootStateOrAny) => state.cart)
 
   const getItemsCount = () => {
     return cart.reduce(

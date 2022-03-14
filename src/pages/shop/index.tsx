@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Container } from './styles'
 import getAllProducts from '../../services/Products/getAllProducts'
 import ProductCard from '../../components/ProductCard'
@@ -11,7 +11,7 @@ const ShopPage: NextPage = (): JSX.Element => {
     await getAllProducts(setProducts)
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     mountProducts()
   }, [])
 

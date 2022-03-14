@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import CategoryCard from '../components/CategoryCard'
 import { Container, Large, Small } from './styles'
 import getAllCategories from '../services/Categories/getAllCategories'
@@ -12,7 +12,7 @@ const Home: NextPage = (): JSX.Element => {
     await getAllCategories(setCategories)
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     mountCategories()
   }, [])
 

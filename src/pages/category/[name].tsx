@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import { useRouter } from 'next/router'
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ProductCard from '../../components/ProductCard'
 import { Container } from '../../pages/shop/styles'
 import getProductsByCategory from '../../services/Products/getProductsByCategory'
@@ -10,13 +10,13 @@ const CategoryPage: NextPage = (): JSX.Element => {
   const router = useRouter()
 
   const categoryName: string = `${router.query.name}`
-  const [products, setProducts] = useState<[]>([])
+  const [products, setProducts] = useState<Product[]>([])
 
   const mountProducts = async () => {
     await getProductsByCategory(setProducts, categoryName)
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     mountProducts()
   }, [])
 

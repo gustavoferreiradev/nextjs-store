@@ -1,34 +1,114 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img alt="NextJS Store" title="NextJS Store" src="#" />
+</h1>
 
-## Getting Started
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-autor">Autor</a> • 
+ <a href="#user-content--licença">Licença</a>
+</p>
 
-First, run the development server:
+
+## 💻 Sobre o projeto
+
+**NextJS Store** é uma aplicação utilizada para exposição de catálogos de produtos e carrinho de compras.
+
+---
+
+## ⚙️ Funcionalidades
+
+- [x] Registrar ponto de entrada, saída, horário de almoço. 
+- [x] Relatórios Gerenciais
+    - [x] Registro de quantidade de funcionários.
+    - [x] Registro de faltas do dia. 
+    - [x] Registro de Horas Trabalhadas no mês. 
+- [x] Relatórios Mensais
+    - [x] Filtro por Mês/Ano e Funcionários. 
+- [x] Cadastro e alteração de funcionários.
+---
+
+## 🚀 Como executar o projeto
+
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [NodeJS](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🧭 Rodando a aplicação web
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+# Clone este repositório
+$ git clone git@github.com:gustavoferreiradev/nextjs-store.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd nextjs-store
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### 🧭 Rodando os testes unitários
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+# Após entrar no diretório, execute o comando abaixo:
+$ yarn test
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Tecnologias
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+As seguintes ferramentas foram usadas na construção do projeto:
 
-## Deploy on Vercel
+#### **Website**  ([HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)  + [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) + [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript))
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **[React](https://reactjs.org/)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   **[Redux](https://react-redux.js.org/)**
+   
+-   **[Jest](https://jestjs.io)**
+
+-   **[React Testing Library](https://testing-library.com)**
+-   
+-   **[NextJS](https://nextjs.org/)**
+
+
+
+#### **Utilitários**
+
+-   Banco de Imagens:  **[Imgur](https://https://imgur.com/)**
+-   Fontes:  **[Open Sans](https://fonts.google.com/specimen/Open+Sans)**
+
+---
+
+## 🦸 Autor
+
+<a href="https://github.com/gustavoferreiradev">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/19676795?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Gustavo Ferreira</b></sub></a> <a href="https://github.com/gustavoferreiradev/" title="Gustavo Ferreira">🚀</a>
+ <br />
+ 
+ 
+[![Linkedin Badge](https://img.shields.io/badge/-Gustavo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gustavofersilva/)](https://www.linkedin.com/in/gustavofersilva/) 
+[![Gmail Badge](https://img.shields.io/badge/-gustavofersilva@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gustavofersilva@gmail.com)](mailto:gustavofersilva@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Gustavo Fereira 👋🏽 [Entre em contato!](https://www.linkedin.com/in/gustavofersilva/)
+
+

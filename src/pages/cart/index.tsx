@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import { Container } from './styles'
-import { useDispatch, useSelector } from 'react-redux'
+import { RootStateOrAny, useDispatch, useSelector } from 'react-redux'
 import Image from 'next/image'
 import {
   decrementQuantity,
@@ -8,18 +8,21 @@ import {
   removeFromCart,
 } from '../../redux/cart.slice'
 
-interface Product {
+interface Cart {
+  id: number
   quantity: number
   price: number
+  title: string
+  image: string
 }
 
 const CartPage: NextPage = (): JSX.Element => {
-  const cart = useSelector((state) => state.cart)
+  const cart = useSelector((state: RootStateOrAny) => state.cart)
   const dispatch = useDispatch()
 
   const getTotalPrice = () => {
     return cart.reduce(
-      (accumulator: number, item: Product) =>
+      (accumulator: number, item: Cart) =>
         accumulator + item.quantity * item.price,
       0
     )
@@ -40,12 +43,12 @@ const CartPage: NextPage = (): JSX.Element => {
             <div>Total Price</div>
           </div>
 
-          {cart.map((item) => (
+          {cart.map((item: Cart) => (
             <div className="body">
               <div className="image">
                 <Image src={item.image} height="90" width="65" />
               </div>
-              <p>{item.product}</p>
+              <p>{item.title}</p>
               <p>$ {item.price}</p>
               <p>{item.quantity}</p>
               <div className="buttons">

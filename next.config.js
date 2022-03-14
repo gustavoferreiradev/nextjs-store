@@ -6,6 +6,6 @@ const nextConfig = {
 module.exports = {
   nextConfig,
   images: {
-    domains: ['imgur.com'],
+    domains: ['imgur.com', 'i.imgur.com', 'fakestoreapi.com'],
   },
 }

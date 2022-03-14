@@ -67,14 +67,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[React](https://reactjs.org/)**
 
+-   **[NextJS](https://nextjs.org/)**
+
+-   **[TypeScript](https://www.typescriptlang.org/)**
+
+-   **[Fetch API](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API)**
+
 -   **[Redux](https://react-redux.js.org/)**
    
 -   **[Jest](https://jestjs.io)**
 
 -   **[React Testing Library](https://testing-library.com)**
--   
--   **[NextJS](https://nextjs.org/)**
-
 
 
 #### **Utilitários**

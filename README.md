@@ -46,8 +46,7 @@ $ git clone git@github.com:gustavoferreiradev/nextjs-store.git
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd nextjs-store
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost
-
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 ```
 ---
 
@@ -58,7 +57,6 @@ $ cd nextjs-store
 # Após entrar no diretório, execute o comando abaixo:
 $ yarn test
 ```
-
 ---
 
 ## 🛠 Tecnologias

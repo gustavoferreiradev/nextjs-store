@@ -27,7 +27,12 @@ export const Nav = styled.nav`
     color: #000;
   }
 
-  li.navlink a:hover {
+  li.navlink a:hover,
+  li.navlink p:hover {
     color: #f9826c;
+  }
+
+  li.navlink p {
+    cursor: pointer;
   }
 `

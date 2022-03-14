@@ -1,14 +1,26 @@
-import Image from 'next/image'
-import { Card } from './styles'
+import Image, { ImageProps } from 'next/image'
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../../redux/cart.slice'
+import { AppDispatch } from '../../redux/store'
+import { Card, Title } from './styles'
+import { Product } from '../../types/Product'
 
-function ProductCard({ product }): JSX.Element {
+interface ProductProps {
+  product: Product
+}
+
+function ProductCard({ product }: ProductProps): JSX.Element {
+  const dispatch: AppDispatch = useDispatch()
+
   return (
     <Card>
-      <Image src={product.image} height={300} width={220} />
-      <h2 className="title">{product.title}</h2>
+      <Image src={product.image} height={420} width={420} />
+      <Title>{product.title}</Title>
       <h3 className="category">{product.category}</h3>
       <p>$ {product.price}</p>
-      <button className="button">Add to Cart</button>
+      <button className="button" onClick={() => dispatch(addToCart(product))}>
+        Add to Cart
+      </button>
     </Card>
   )
 }

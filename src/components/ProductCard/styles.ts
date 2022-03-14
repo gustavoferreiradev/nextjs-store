@@ -7,7 +7,7 @@ export const Card = styled.div`
   margin-bottom: 2.5rem;
 
   .title {
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: 600;
   }
 
@@ -30,4 +30,13 @@ export const Card = styled.div`
     background: black;
     color: white;
   }
+`
+
+export const Title = styled.h2`
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 10rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `

@@ -1,27 +1,25 @@
-import React from 'react'
-import { render, screen } from '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
 import Navbar from '.'
-import Link from 'next/link'
+import { render, screen } from '../../utils/testUtils'
+import '@testing-library/jest-dom/extend-expect'
 
-describe('Testing the Text of Navbar Component', () => {
-  it('Testing the list of links', () => {
-    render(
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/loja">Loja</Link>
-        </li>
-        <li>
-          <Link href="/cart">Carrinho</Link>
-        </li>
-      </ul>
-    )
+describe('<Navbar />', () => {
+  it('should render logo and links text', () => {
+    render(<Navbar />)
+    expect(screen.getByText(/Store/i)).toBeInTheDocument()
+    expect(screen.getByText(/Home/i)).toBeInTheDocument()
+    expect(screen.getByText(/Shop/i)).toBeInTheDocument()
+    expect(screen.getByText(/Cart/i)).toBeInTheDocument()
+  })
 
-    expect(screen.queryByText('Home')).toBeInTheDocument()
-    expect(screen.queryByText('Loja')).toBeInTheDocument()
-    expect(screen.queryByText('Carrinho')).toBeInTheDocument()
+  it('should navigate to ... when link is clicked', () => {
+    render(<Navbar />)
+    const homeLink = screen.getByRole('link', { name: /Home/i })
+    expect(homeLink.getAttribute('href')).toBe('/')
+
+    const shopLink = screen.getByRole('link', { name: /Shop/i })
+    expect(shopLink.getAttribute('href')).toBe('/shop')
+
+    const CartLink = screen.getByRole('link', { name: /Cart/i })
+    expect(CartLink.getAttribute('href')).toBe('/cart')
   })
 })
